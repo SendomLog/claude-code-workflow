@@ -19,10 +19,10 @@ Claude Code is powerful out of the box, but without structure it becomes a smart
 ```
 ┌─────────────────────────────────────────────────────────┐
 │  Layer 0: Auto-loaded Rules (always in context)         │
-│  ┌─────────────┐ ┌──────────┐ ┌────────────┐ ┌───────┐ │
-│  │ behaviors.md │ │capture.md│ │skill-      │ │memory-│ │
-│  │              │ │          │ │triggers.md │ │flush  │ │
-│  └─────────────┘ └──────────┘ └────────────┘ └───────┘ │
+│  ┌─────────────┐ ┌────────────┐ ┌───────────────┐     │
+│  │ behaviors.md │ │skill-      │ │memory-flush.md│     │
+│  │              │ │triggers.md │ │               │     │
+│  └─────────────┘ └────────────┘ └───────────────┘     │
 ├─────────────────────────────────────────────────────────┤
 │  Layer 1: On-demand Docs (loaded when needed)           │
 │  agents.md · content-safety.md · task-routing.md        │
@@ -44,7 +44,6 @@ builder-workflow-template/
 │
 ├── rules/                        # Layer 0: Always loaded
 │   ├── behaviors.md              # Core behavior rules (debugging, commits, routing)
-│   ├── capture.md                # Content capture triggers (tweets, insights, links)
 │   ├── skill-triggers.md         # When to auto-invoke which skill
 │   └── memory-flush.md           # Auto-save triggers (never lose progress)
 │
@@ -52,12 +51,9 @@ builder-workflow-template/
 │   ├── agents.md                 # Multi-model collaboration framework
 │   ├── behaviors-extended.md     # Extended rules (knowledge base, associations)
 │   ├── behaviors-reference.md    # Detailed operation guides
-│   ├── capture-templates.md      # Output templates for captures
 │   ├── content-safety.md         # AI hallucination prevention system
-│   ├── portfolio-analysis.md     # Investment analysis framework
 │   ├── scaffolding-checkpoint.md # "Do you really need to self-host?" checklist
-│   ├── task-routing.md           # Model tier routing + cost comparison
-│   └── x-guardrails.md           # Content platform posting guardrails
+│   └── task-routing.md           # Model tier routing + cost comparison
 │
 ├── memory/                       # Layer 2: Your working state (templates)
 │   ├── today.md                  # Daily session log

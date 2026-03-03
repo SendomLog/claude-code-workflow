@@ -1,6 +1,6 @@
 # Builder Workflow Template — Claude Code Global Memory
 
-> Auto-loaded = rules/ (behaviors.md, capture.md, skill-triggers.md, memory-flush.md)
+> Auto-loaded = rules/ (behaviors.md, skill-triggers.md, memory-flush.md)
 > On-demand = docs/ (agents.md, content-safety.md, task-routing.md, behaviors-extended.md, ...)
 > Hot data layer → memory/today.md + memory/active-tasks.json
 
@@ -140,10 +140,8 @@ Routes determine write targets. Unlisted projects share the main MEMORY.md.
 | AI content safety/quality control | `Read docs/content-safety.md` |
 | Task routing details/model costs | `Read docs/task-routing.md` |
 | New project/tech stack decisions | `Read docs/scaffolding-checkpoint.md` |
-| Capture templates/formats | `Read docs/capture-templates.md` |
 | Behavior reference details | `Read docs/behaviors-reference.md` |
-| Extended behaviors (Obsidian, etc.) | `Read docs/behaviors-extended.md` |
-| X platform guardrails | `Read docs/x-guardrails.md` |
+| Extended behaviors (knowledge base, etc.) | `Read docs/behaviors-extended.md` |
 | Cross-day goals/todos | `Read memory/goals.md` |
 | Pattern library | `Read patterns.md` |
 
