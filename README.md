@@ -86,7 +86,7 @@ builder-workflow-template/
 
 ```bash
 # Clone the template
-git clone https://github.com/anthropics/builder-workflow-template.git
+git clone https://github.com/runesleo/builder-workflow-template.git
 
 # Copy to your Claude Code config directory
 cp -r builder-workflow-template/* ~/.claude/
